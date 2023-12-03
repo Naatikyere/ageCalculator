@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: hsl(0, 0%, 86%);
+    --work-area-color:hsl(0, 0%, 100%);
+    --label-color:hsl(0, 0%, 94%);
+    --border-color:hsl(0, 1%, 44%) ;
+    --text-color:hsl(0, 0%, 8%);
+    --calculated-text-color:hsl(259, 100%, 65%);
+    --error-color:hsl(0, 100%, 67%);
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    /********* The whole page layout ******/
+
+    /****** start ****/
+
+    .main{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        background-color:var(--background-color) ;
+        width: 100vw;
+        min-height: 100vh;
+    }
+
+    /***** END *****/
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--work-area-color);
+       /* max-width: 500px;*/
+        padding: 1.5em;
+        min-width:200px;
+        border-radius: 20px 20px 120px  20px;
+    }
+
+    /******** Forms ******/
+
+    /*** Start ********/
+    .forms{
+        display: flex;
+        cursor: pointer;
+    }
+    .properties:hover{
+        box-shadow: 5px 5px 1px;
+    }
+    .forms div{
+        margin: 0.8em 0;
+    }
+    .properties{
+        width: 100px;
+        padding: 0.6em;
+        height: 3.5em;
+        margin-right:1.5em;
+        border-color: var(--border-color);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    ::placeholder{
+        color: var(--border-color);
+        font-size: 1.2em;
+        font-weight: 800;
+        font-family: 'Poppins';
+    }
+    /******* END *****/
+
+    .Calculate_area{
+        margin: 1.8em 0;
+    }
+    .Calculate_area div{
+        display: flex;
+    }
+    /****** Smalll back line area ****/
+    .divider{
+        margin-top: 1.2em;
+        width: 340px;
+        height: 0.01em;
+        box-shadow: 1px 1px 1px;
+    }
+    button{
+        border: none;
+        border-radius: 50%;
+        padding: 0.6em;
+        background-color: var(--calculated-text-color);
+        cursor: pointer;
+    }
+    .btw{
+        position: relative;
+        top: 0;
+        bottom: 0;
+    }
+    .btn{
+        position: absolute;
+        left: 80%;
+        top: -25px;
+    }
+
+
+    /****** END *****/
+
+    .Answer{
+        color: var(--calculated-text-color);
+        font-size: 3rem !important;
+        font-family:'Poppins';
+        font-weight: 800;
+    }
+    label{
+        display: block;
+        font-size: 0.8em;
+        font-weight: 700;
+        font-family: 'Poppins';
+        color: var(--border-color);
+    }
+    h1{
+        color: var(--text-color);
+        font-size: 3rem !important;
+        font-family:'Poppins';
+        font-weight: 800;
+    }
