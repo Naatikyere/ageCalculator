@@ -68,6 +68,17 @@
         font-weight: 800;
         font-family: 'Poppins';
     }
+    .err{
+        color: var(--error-color)!important;
+        font-family: 'Poppins';
+        font-weight: 400i;
+        font-size: 0.7em;
+    }
+    .error_message{
+        color: var(--error-color)!important;
+        border-color: var(--error-color) !important;
+        box-shadow: none;
+    }
     /******* END *****/
 
     .Calculate_area{
@@ -90,6 +101,9 @@
         background-color: var(--calculated-text-color);
         cursor: pointer;
     }
+    button:hover{
+        background-color: var(--text-color);
+    }
     .btw{
         position: relative;
         top: 0;
@@ -109,6 +123,7 @@
         font-size: 3rem !important;
         font-family:'Poppins';
         font-weight: 800;
+        margin-right: 0.2em;
     }
     label{
         display: block;
@@ -122,4 +137,18 @@
         font-size: 3rem !important;
         font-family:'Poppins';
         font-weight: 800;
+    }
+
+
+    @media screen and (max-width: 400px){
+        .btn{
+            position: absolute;
+            left: 40%;
+            top: -25px;
+        }
+        button:hover{
+            background-color: var(--text-color);
+        }
+
+
     }
